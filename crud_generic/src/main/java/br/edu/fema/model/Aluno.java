@@ -5,24 +5,26 @@ import br.edu.fema.reflection.annotations.D;
 import br.edu.fema.reflection.annotations.R;
 import br.edu.fema.reflection.annotations.U;
 
+import java.util.UUID;
+
 @C @R @U @D
 public class Aluno {
 
-    private Integer id;
+    private UUID id;
     private String nome;
     private String matricula;
 
-    public Aluno(Integer id, String nome, String matricula) {
+    public Aluno(UUID id, String nome, String matricula) {
         this.id = id;
         this.nome = nome;
         this.matricula = matricula;
     }
 
-    public Integer getId() {
+    public UUID getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(UUID id) {
         this.id = id;
     }
 
